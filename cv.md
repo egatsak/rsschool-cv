@@ -17,10 +17,10 @@ Located in Batumi, Georgia
 I am curious and do enjoy finding creative solutions to problems. I like
 translating user needs, as well as business and technical requirements,
 into clean, readable and maintainable code. My sociability, strong
-attention to details and responsibility make me good at teamwork. I have
+attention to details and responsibility make me good at teamwork. I have a
 passion for learning new concepts, features and technologies, which
 always help me to stay up to date.
-I have been working as a Chemistry an Mathematics teacher for 10 years and I understand the importance of perseverance, patience and persistence while helping others to improve their knowledge.
+I worked as a Chemistry and Mathematics teacher for the last 10 years and I understand the importance of perseverance, patience and persistence while helping others to improve their knowledge.
 
 ### SKILLS
 
