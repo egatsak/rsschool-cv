@@ -4,30 +4,51 @@
 
 :root {
   --color-bg: #f9f9f9;
+  --color-text-main: rgb(47, 45, 45);
+  --color-text-variant: #9b1717;
 }
 
 body {
+  background-color: var(--color-bg);
   min-height: 100vh;
   max-width: 900px;
   margin: 0 auto;
+  font-family: Montserrat;
 }
 
 .container {
   display: grid;
   grid-template-rows: auto;
   row-gap: 1%;
-  background-color: var(--color-bg);
+  color: rgb(71, 70, 70);
 }
 
-h2 {
+.redline {
+  background-image: linear-gradient(
+    to left top,
+    #59152e,
+    #781636,
+    #97153c,
+    #b7163f,
+    #d61a3e
+  );
+  height: 6vh;
+}
+
+header h2 {
   font-size: 2em;
-  margin: 0.2em 0;
+  margin: 0 0.2em 0;
+  padding: 0.2em;
 }
 
-h3 {
-  font-size: 1.5em;
+header h2 + h2 {
+  color: var(--color-text-variant);
+}
+
+header h3 {
+  font-size: 1.5rem;
   margin: 0.2em 0;
-  padding-left: 5%;
+  padding: 0.2em 0 0 0.5em;
 }
 
 header {
@@ -35,7 +56,6 @@ header {
   grid-template:
     [row1-start] "redline redline redline redline" [row1-end]
     "photo meta meta contacts";
-  grid-column-gap: 1%;
 }
 
 header .redline {
@@ -44,25 +64,22 @@ header .redline {
 
 header .photo {
   grid-area: photo;
-  background-color: wheat;
   min-height: 150px;
 }
 
-.photo > img {
+header .photo > img {
   object-fit: cover;
   width: 100%;
   height: 190px;
   padding-top: 5px;
   padding-left: 5px;
+  border-radius: 50px;
 }
 
 header .meta {
   grid-area: meta;
-  background-color: blueviolet;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-self: center;
+  align-self: center;
 }
 
 header .contacts {
@@ -75,24 +92,12 @@ header > ul {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding-right: 5px;
+  padding: 0 5px 0 0;
 }
 
 header > ul > li {
-  font-size: 1.5em;
+  font-size: 1.2rem;
   padding: 2vh 0;
-}
-
-.redline {
-  background-image: linear-gradient(
-    to left top,
-    #59152e,
-    #781636,
-    #97153c,
-    #b7163f,
-    #d61a3e
-  );
-  height: 4vh;
 }
 
 main {
@@ -106,8 +111,25 @@ section {
   column-gap: 3%;
 }
 
-section div > span {
-  float: right;
+.section-title {
+  justify-self: right;
+  font-size: 1.5rem;
+  color: var(--color-text-variant);
+}
+
+section .job-title {
+  margin-top: 10px;
+  padding-left: 5px;
+  font-size: 1.2rem;
+}
+
+section .description {
+  margin: 4px 0 0 16px;
+}
+
+section .date {
+  padding-left: 20px;
+  font-weight: 700;
 }
 
 .thinline {
@@ -119,8 +141,8 @@ section div > span {
     #b7163f,
     #d61a3e
   );
-  height: 3px;
-  margin-top: 1.75%;
+  height: 4px;
+  margin: 12px 0 6px 0;
 }
 
 footer {
@@ -129,7 +151,7 @@ footer {
     "logo time time link"
     "redline redline redline redline";
   grid-column-gap: 1%;
-  /*   flex: 0 0 auto; */
+  font-size: 1.5rem;
 }
 
 footer .logo {
@@ -145,7 +167,6 @@ footer time {
   justify-self: center;
   align-self: center;
   grid-area: time;
-  font-size: 1.5rem;
 }
 
 footer .link {
@@ -157,7 +178,12 @@ footer .redline {
   grid-area: redline;
 }
 
-section ul {
-  margin: 1%;
-  padding-left: 3%;
+a,
+a:visited {
+  color: var(--color-text-main);
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
