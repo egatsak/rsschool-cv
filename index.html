@@ -17,34 +17,37 @@
       content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
   </head>
+  
   <body>
     <div class="container">
       <header>
         <div class="redline"></div>
         <div class="photo">
-          <img src="./103357389.jfif" alt="photo">
+          <img src="./103357389.jfif" alt="photo" />
         </div>
         <div class="meta">
-          <h2>YAUHENI</h2>
-          <h2>HATSAK</h2>
-          <h3>JS Developer</h3>
+          <p>YAUHENI</p>
+          <p>HATSAK</p>
+          <h1>JS Developer</h1>
         </div>
-        <ul>
-          <li>greenglaz@gmail.com</li>
-          <li>skype: eugene_gatsak</li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/yauheni-hatsak-39312023b/"
-              target="_blank"
-              >LinkedIn profile</a
-            >
-          </li>
-        </ul>
+        <nav>
+          <ul class="contacts">
+            <li>greenglaz@gmail.com</li>
+            <li>skype: eugene_gatsak</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/yauheni-hatsak-39312023b/"
+                target="_blank"
+                >LinkedIn profile</a
+              >
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <main>
         <section>
-          <div class="section-title">PROFILE</div>
+          <h2 class="section-title">PROFILE</h2>
           <div>
             <div class="thinline"></div>
             <p>
@@ -62,8 +65,9 @@
             </p>
           </div>
         </section>
+        
         <section>
-          <div class="section-title">SKILLS</div>
+          <h2 class="section-title">SKILLS</h2>
           <div>
             <div class="thinline"></div>
             <ul>
@@ -86,10 +90,9 @@
         </section>
 
         <section>
-          <div class="section-title">EXPERIENCE</div>
+          <h2 class="section-title">EXPERIENCE</h2>
           <div>
             <div class="thinline"></div>
-
             <div>
               <div class="job-title">Intern Developer</div>
               <div class="date">2022</div>
@@ -104,7 +107,9 @@
               </div>
               <div class="date">2012-2022</div>
               <ul class="description">
-                <li>Helping students to prepare for tests and exams</li>
+                <li>
+                  Helping students to prepare for tests and exams
+                </li>
                 <li>
                   Tutoring for school, college and university students
                 </li>
@@ -114,26 +119,27 @@
         </section>
 
         <section>
-          <div class="section-title">EXTRA</div>
+          <h2 class="section-title">CODE EXAMPLES</h2>
           <div>
             <div class="thinline"></div>
             <ul>
-              <li>Fluent English speaker (C1 level)</li>
-              <li>Glory to Ukraine!</li>
-              <li>Long Live Belarus!</li>
-              <li>Saqartvelos Gaumarjos!</li>
+              <li>
+                <a
+                  href="https://superb-creponne-a1df7b.netlify.app/"
+                  target="_blank"
+                  >WindBNB - my project built with React</a>           
+              </li>
+              <li>This is my example of a <code>code</code> tag</li>
             </ul>
           </div>
         </section>
 
         <section>
-          <div class="section-title">EDUCATION</div>
+          <h2 class="section-title">EDUCATION</h2>
           <div>
             <div class="thinline"></div>
             <div class="job-title">
-              <a href="https://learnjavascript.online" target="_blank"
-                >learnjavascript.online</a
-              >
+              <a href="https://learnjavascript.online" target="_blank">learnjavascript.online</a>
             </div>
             <div class="date">2022</div>
             <ul class="description">
@@ -142,9 +148,7 @@
               </li>
             </ul>
             <div class="job-title">
-              <a href="https://react-tutorial.app" target="_blank"
-                >react-tutorial.app</a
-              >
+              <a href="https://react-tutorial.app" target="_blank>react-tutorial.app</a>
             </div>
             <div class="date">2022</div>
             <ul class="description">
@@ -158,27 +162,43 @@
                 Tutoring for school, college and university students
               </li>
             </ul>
+          </div>
+        </section>
+        
+        <section>
+          <h2 class="section-title">EXTRA</h2>
+          <div>
+            <div class="thinline"></div>
+            <ul>
+              <li>Fluent English speaker (C1 level)</li>
+              <li>Glory to Ukraine!</li>
+              <li>Long Live Belarus!</li>
+              <li>Saqartvelos Gaumarjos!</li>
+            </ul>
             <div class="thinline"></div>
           </div>
         </section>
       </main>
 
       <footer>
-        <span class="logo"
-          ><a href="https://rs.school/" target="_blank"
-            ><img
-              src="https://proprofi.online/upload/003/u315/2/5/251fbcf3.png"
-              alt="RS School Logo"></a
-        ></span>
-        <time>2022</time>
-        <a
-          class="link"
-          href="https://github.com/egatsak"
-          target="_blank"
-          >Github</a
-        >
+        <ul>
+          <li class="logo">
+            <a href="https://rs.school/" target="_blank"
+              ><img
+                src="https://proprofi.online/upload/003/u315/2/5/251fbcf3.png"
+                alt="RS School Logo"
+            ></a>
+          </li>
+          <li class="time">
+            <time datetime="2022">November 2022</time>
+          </li>
+          <li class="link">
+            <a href="https://github.com/egatsak" target="_blank">Github</a>
+          </li>
+        </ul>
         <div class="redline"></div>
       </footer>
+      
     </div>
   </body>
 </html>
