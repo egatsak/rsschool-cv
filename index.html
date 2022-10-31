@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
-      crossorigin
-    />
+      crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto&display=block"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+      content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
   </head>
   <body>
@@ -25,29 +22,31 @@
       <header>
         <div class="redline"></div>
         <div class="photo">
-          <img src="./103357389.jfif" alt="photo" />
+          <img src="./103357389.jfif" alt="photo">
         </div>
         <div class="meta">
-          <h2>YAUHENI</h2>
-          <h2>HATSAK</h2>
-          <h3>JS Developer</h3>
+          <p>YAUHENI</p>
+          <p>HATSAK</p>
+          <h1>JS Developer</h1>
         </div>
-        <ul>
-          <li>greenglaz@gmail.com</li>
-          <li>skype: eugene_gatsak</li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/yauheni-hatsak-39312023b/"
-              target="_blank"
-              >LinkedIn profile</a
-            >
-          </li>
-        </ul>
+        <nav>
+          <ul class="contacts">
+            <li>greenglaz@gmail.com</li>
+            <li>skype: eugene_gatsak</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/yauheni-hatsak-39312023b/"
+                target="_blank"
+                >LinkedIn profile</a
+              >
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <main>
         <section>
-          <div class="section-title">PROFILE</div>
+          <h2 class="section-title">PROFILE</h2>
           <div>
             <div class="thinline"></div>
             <p>
@@ -66,7 +65,7 @@
           </div>
         </section>
         <section>
-          <div class="section-title">SKILLS</div>
+          <h2 class="section-title">SKILLS</h2>
           <div>
             <div class="thinline"></div>
             <ul>
@@ -89,7 +88,7 @@
         </section>
 
         <section>
-          <div class="section-title">EXPERIENCE</div>
+          <h2 class="section-title">EXPERIENCE</h2>
           <div>
             <div class="thinline"></div>
 
@@ -103,13 +102,15 @@
 
             <div>
               <div class="job-title">
-                Mathematics & Chemistry Teacher
+                Mathematics, Chemistry Teacher
               </div>
               <div class="date">2012-2022</div>
               <ul class="description">
-                <li>Helping students to prepare for tests & exams</li>
                 <li>
-                  Tutoring for school, college & university students
+                  Helping students to prepare for tests and exams
+                </li>
+                <li>
+                  Tutoring for school, college and university students
                 </li>
               </ul>
             </div>
@@ -117,20 +118,24 @@
         </section>
 
         <section>
-          <div class="section-title">EXTRA</div>
+          <h2 class="section-title">CODE EXAMPLES</h2>
           <div>
             <div class="thinline"></div>
             <ul>
-              <li>Fluent English speaker (C1 level)</li>
-              <li>Glory to Ukraine!</li>
-              <li>Long Live Belarus!</li>
-              <li>Saqartvelos Gaumarjos!</li>
+              <li>
+                <a
+                  href="https://superb-creponne-a1df7b.netlify.app/"
+                  target="_blank"
+                  >WindBNB - my project built with React</a
+                >
+              </li>
+              <li>This is my example of a <code>code</code> tag</li>
             </ul>
           </div>
         </section>
 
         <section>
-          <div class="section-title">EDUCATION</div>
+          <h2 class="section-title">EDUCATION</h2>
           <div>
             <div class="thinline"></div>
             <div class="job-title">
@@ -146,8 +151,7 @@
             </ul>
             <div class="job-title">
               <a href="https://react-tutorial.app" target="_blank"
-                >react-tutorial.app</a
-              >
+                >react-tutorial.app</a>
             </div>
             <div class="date">2022</div>
             <ul class="description">
@@ -156,10 +160,22 @@
             <div class="job-title">Belarusian State University</div>
             <div class="date">2007-2012</div>
             <ul class="description">
-              <li>Helping students to prepare for tests & exams</li>
+              <li>Helping students to prepare for tests and exams</li>
               <li>
-                Tutoring for school, college & university students
+                Tutoring for school, college and university students
               </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-title">EXTRA</h2>
+          <div>
+            <div class="thinline"></div>
+            <ul>
+              <li>Fluent English speaker (C1 level)</li>
+              <li>Glory to Ukraine!</li>
+              <li>Long Live Belarus!</li>
+              <li>Saqartvelos Gaumarjos!</li>
             </ul>
             <div class="thinline"></div>
           </div>
@@ -167,19 +183,21 @@
       </main>
 
       <footer>
-        <span class="logo"
-          ><a href="https://rs.school/" target="_blank"
-            ><img
-              src="https://proprofi.online/upload/003/u315/2/5/251fbcf3.png"
-              alt="RS School Logo" /></a
-        ></span>
-        <time>2022</time>
-        <a
-          class="link"
-          href="https://github.com/egatsak"
-          target="_blank"
-          >Github</a
-        >
+        <ul>
+          <li class="logo">
+            <a href="https://rs.school/" target="_blank"
+              ><img
+                src="https://proprofi.online/upload/003/u315/2/5/251fbcf3.png"
+                alt="RS School Logo"
+            ></a>
+          </li>
+          <li class="time">
+            <time datetime="2022">November 2022</time>
+          </li>
+          <li class="link">
+            <a href="https://github.com/egatsak" target="_blank">Github</a>
+          </li>
+        </ul>
         <div class="redline"></div>
       </footer>
     </div>
