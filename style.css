@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #f9f9f9;
+  --color-text-main: rgb(47, 45, 45);
+  --color-text-variant: #9b1717;
+}
+
+body {
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Montserrat;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1%;
+  color: rgb(71, 70, 70);
+}
+
+.redline {
+  background-image: linear-gradient(
+    to left top,
+    #59152e,
+    #781636,
+    #97153c,
+    #b7163f,
+    #d61a3e
+  );
+  height: 6vh;
+}
+
+header h2 {
+  font-size: 2em;
+  margin: 0 0.2em 0;
+  padding: 0.2em;
+}
+
+header h2 + h2 {
+  color: var(--color-text-variant);
+}
+
+header h3 {
+  font-size: 1.5rem;
+  margin: 0.2em 0;
+  padding: 0.2em 0 0 0.5em;
+}
+
+header {
+  display: grid;
+  grid-template:
+    [row1-start] "redline redline redline redline" [row1-end]
+    "photo meta meta contacts";
+}
+
+header .redline {
+  grid-area: redline;
+}
+
+header .photo {
+  grid-area: photo;
+  min-height: 150px;
+}
+
+header .photo > img {
+  object-fit: cover;
+  width: 100%;
+  height: 190px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: 50px;
+}
+
+header .meta {
+  grid-area: meta;
+  justify-self: center;
+  align-self: center;
+}
+
+header .contacts {
+  grid-area: contacts;
+}
+
+header > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 5px 0 0;
+}
+
+header > ul > li {
+  font-size: 1.2rem;
+  padding: 2vh 0;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 3%;
+}
+
+.section-title {
+  justify-self: right;
+  font-size: 1.5rem;
+  color: var(--color-text-variant);
+}
+
+section .job-title {
+  margin-top: 10px;
+  padding-left: 5px;
+  font-size: 1.2rem;
+}
+
+section .description {
+  margin: 4px 0 0 16px;
+}
+
+section .date {
+  padding-left: 20px;
+  font-weight: 700;
+}
+
+.thinline {
+  background-image: radial-gradient(
+    circle,
+    #59152e,
+    #781636,
+    #97153c,
+    #b7163f,
+    #d61a3e
+  );
+  height: 4px;
+  margin: 12px 0 6px 0;
+}
+
+footer {
+  display: grid;
+  grid-template-areas:
+    "logo time time link"
+    "redline redline redline redline";
+  grid-column-gap: 1%;
+  font-size: 1.5rem;
+}
+
+footer .logo {
+  grid-area: logo;
+  justify-self: end;
+}
+
+footer .logo > a > img {
+  max-height: 50px;
+}
+
+footer time {
+  justify-self: center;
+  align-self: center;
+  grid-area: time;
+}
+
+footer .link {
+  grid-area: link;
+  align-self: center;
+}
+
+footer .redline {
+  grid-area: redline;
+}
+
+a,
+a:visited {
+  color: var(--color-text-main);
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
