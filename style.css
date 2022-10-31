@@ -6,34 +6,35 @@
   --color-bg: #f9f9f9;
 }
 
-/* #root {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
-
 body {
   min-height: 100vh;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+.container {
   display: grid;
   grid-template-rows: auto;
-  row-gap: 2%;
+  row-gap: 1%;
   background-color: var(--color-bg);
 }
 
-h1 {
+h2 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0.2em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0.2em 0;
+  padding-left: 5%;
 }
 
 header {
-  /*   flex: 0 0 auto; */
   display: grid;
-  grid-template-areas:
-    "redline redline redline redline"
+  grid-template:
+    [row1-start] "redline redline redline redline" [row1-end]
     "photo meta meta contacts";
-  /*   grid-template-columns: 30% auto; */
   grid-column-gap: 1%;
 }
 
@@ -44,29 +45,44 @@ header .redline {
 header .photo {
   grid-area: photo;
   background-color: wheat;
+  min-height: 150px;
+}
+
+.photo > img {
+  object-fit: cover;
+  width: 100%;
+  height: 190px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 header .meta {
   grid-area: meta;
   background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 header .contacts {
   grid-area: contacts;
 }
 
-.photo-wrapper {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  height: 25vh;
+header > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 5px;
 }
 
-.photo-wrapper img {
-  object-fit: cover;
-  padding: 10px;
-  border-radius: 45%;
+header > ul > li {
+  font-size: 1.5em;
+  padding: 2vh 0;
 }
+
 .redline {
   background-image: linear-gradient(
     to left top,
@@ -84,10 +100,14 @@ main {
   grid-template-rows: auto;
 }
 
-main section {
+section {
   display: grid;
   grid-template-columns: 1fr 3fr;
   column-gap: 3%;
+}
+
+section div > span {
+  float: right;
 }
 
 .thinline {
@@ -104,7 +124,6 @@ main section {
 }
 
 footer {
-  margin-top: 2rem;
   display: grid;
   grid-template-areas:
     "logo time time link"
@@ -118,19 +137,27 @@ footer .logo {
   justify-self: end;
 }
 
+footer .logo > a > img {
+  max-height: 50px;
+}
+
 footer time {
   justify-self: center;
+  align-self: center;
   grid-area: time;
+  font-size: 1.5rem;
 }
 
 footer .link {
   grid-area: link;
+  align-self: center;
 }
+
 footer .redline {
   grid-area: redline;
 }
 
-ul {
-  margin: 0;
+section ul {
+  margin: 1%;
   padding-left: 3%;
 }
